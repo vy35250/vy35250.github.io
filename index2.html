@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Vijay</title>
+
+    <link rel="stylesheet" href="/Users/vijaykumaryadav/Downloads/Ethical-Hacker-Portfolio-template-main/CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <canvas id="matrixCanvas"></canvas>
+    <!-- Matrix -->
+    <script src="/Users/vijaykumaryadav/Downloads/Ethical-Hacker-Portfolio-template-main/JAVASCRIPT/matrix.js"></script>
+
+    <header class="header">
+        <a href="#" class="logo">{Portfolio} </a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1;" onclick="showSection('home')">Home</a>
+            <a href="#about" style="--i:2;" onclick="showSection('about')">About</a>
+            <a href="#skill" style="--i:3;" onclick="showSection('skill')">Skills</a>
+            <a href="#project" style="--i:4;" onclick="showSection('project')">Projects</a>
+            <a href="#contact" style="--i:5;" onclick="showSection('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content" data-scroll data-scroll-speed="-5" >
+            <h3 class="mu">Hello, It's me</h3>
+            <h1>Vijaykumar</h1>
+            <h3>And I'm a <span class="pro-text"></span></h3>
+            <script>
+                var typed = new Typed(".pro-text", {
+                    strings: [
+                        "Ethical Hacker",
+                        "Pentester",
+                        "Red Teamer",
+                        "CTF Player",
+                        "Frontend Developer"
+                    ],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    backDelay: 1000,
+                    loop: true
+                });
+            </script>
+            <p> 
+                &emsp; &emsp;This portfolio highlights my passion for cybersecurity and my commitment to ethical practices. <br> <br>
+                &emsp; &emsp;I have acquired fundamental knowledge and skills in various areas of ethical hacking, 
+                allowing me to contribute to the security of organizations. <br> <br>
+                &emsp; &emsp; 
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content" data-scroll data-scroll-speed="-5" >
+            <h2>About Me</h2>
+            <p>
+                I am a proficient security expert with extensive experience in Vulnerability Management, Penetration Testing, Python programming, Log Analysis, and training. My skills include using SAST/DAST tools for web, mobile, API, and network security, with a proven track record as a second line of defense professional.
+            </p>
+            <p>
+                During my tenure at MobiTrail Private Ltd, I conducted security assessments on over 100 web applications and APIs, addressing OWASP Top 10 vulnerabilities and contributing to PCI-DSS certification. I collaborated with cross-functional teams to perform vulnerability assessments using Nessus on 513 Windows, Linux, and AIX servers, ensuring immediate closure of observations without hindering business operations. My work included OS hardening and DB security audits following CIS benchmarks to reduce attack surfaces.
+            </p>
+            <p>
+                Additionally, I developed a Python script to automate network penetration testing, significantly reducing testing time by 90%. I have also assisted in developing new procedures and training teams on penetration testing.
+            </p>
+            <p>
+                As a Trainee Associate Systems Analyst at the National Stock Exchange Information Technology (NSEIT), I developed optimized application-level code, reducing data loading times by 60%. I utilized Qlik Sense visualization features to build compelling dashboards for analysis and analyzed server logs to detect unusual behavior using Logstash and Kibana.
+            </p>
+            <p>
+                I have undertaken various projects, including a secure code review identifying critical buffer overflow vulnerabilities, security testing using Eternal Blue exploit, and active participation in Capture the Flag (CTF) events. My skills in bug hunting have allowed me to report multiple high-severity vulnerabilities to clients on BugCrowd and RDP programs.
+            </p>
+            <p>
+                I am currently pursuing my Masters in Cybersecurity, Information Security at Georgia Institute of Technology, with a GPA of 3.75/4.0. I hold a Bachelor of Engineering in Computer Engineering from the University of Mumbai, with a GPA of 8.23/10.
+            </p>
+        </div>
+
+    </section>
+    <section id="skill" class="skill">
+        <div class="skill-content" data-scroll data-scroll-speed="-5">
+            <h2>Technical Skills</h2>
+            <div class="skill-category">
+                
+                <p>
+                    <strong>Programming Languages & Tools:</strong> Python, SQL, C, SIEM, ELK Stack, Qlik Sense, Burp Suite, Shodan, various GitHub tools.
+                </p>
+                <p>
+                    <strong>Vulnerability and Penetration Testing Tools:</strong> Nessus, Acunetix, Nmap, Dirsearch, Metasploit, SQLMap, Parallel, Masscan, FFUF, Hashcat, John the Ripper, Nikto, JS Miner, LinkFinder, Subfinder, Sublist3r, Gau, httpx, httprobe.
+                </p>
+                <p>
+                    <strong>Networking Skills:</strong> TCP/IP protocols, Segmentation, OSI, Routing, Firewalls, DLP, DNS, DHCP, IPv4, IPv6, SMTP, OS, Windows.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="project">
+        <div class="project-content" data-scroll data-scroll-speed="-5"></div>
+        <h2>Projects</h2>
+
+
+
+        <div class="project-category">
+
+            <h3>Secure Code Review | Application Security</h3>
+            <p><strong>Duration:</strong> Aug. 2023 – Oct. 2023</p>
+            <p></p><strong>Summary:</strong> Conducted a comprehensive code base review by reverse engineering, using advanced debugging techniques with GDB to identify critical buffer overflow vulnerability within a C program.</p>
+            <p> <strong>Skills:</strong> GDB, Buffer Overflow, Linux, Offensive Security, Reverse Engineering</p>
+        </div>
+
+        <div class="project-category">
+            <h3>Eternal Blue exploit | Network Security</h3>
+            <p align = "left"><strong>Duration:</strong> Jun. 2023 – Jul. 2023 </p>
+            <p align = "left"><strong>Summary:</strong> Performed security testing to gain control over a victim’s machine running on SMB v2.0 using Metasploit and Nmap.</p>
+            <p><strong>Skills:</strong> Nmap, Metasploit, Linux, SMB, Snort rules</p>
+        </div>
+
+        <div class="project-category">
+            <h3>Application Security| Capture the Flag (CTF)</h3>
+            <p><strong>Duration:</strong> Oct. 2023 – Present</p>
+            <p><strong>Summary:</strong> Actively participating in various CTF events, gaining expertise in Steganography, web application security, OSINT, and Wireshark. Recently participated in Unbreakable International 2024 and secured 19th position out of 800+ participants.</p>
+            <p><strong>Skills:</strong> Nmap, Metasploit, Linux, Steganography, Reverse Engineering, OSINT, web, mobile, source code reviews, Wireshark</p>
+        </div>
+
+        <div class="project-category">
+            <h3>Application Security | Bug hunting</h3>
+            <p><strong>Duration:</strong> Aug. 2020 – Present</p>
+            <p><strong>Summary:</strong> Reporting multiple high severity vulnerabilities such as account takeovers, admin panel takeovers, XSS, SQLi, CSRF, business logic errors, and IDORs to clients on BugCrowd and RDP programs using Burp Suite, Shodan, and various GitHub tools.</p>
+            <p><strong>Skills:</strong> Burpsuite, Nmap, Research, OWASP Top 10, nuclei</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact-content" data-scroll data-scroll-speed="-5">
+            <h2>Contact</h2>
+            <p>Phone: +1 404-259-8764</p>
+            <p>Email: vy35250@gmail.com</p>
+        </div>
+    </section>
+
+            <div class="home-sci">
+                <a href="https://github.com/vy35250/" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/vijayykyy/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://wa.me/4042598764" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                
+            </div>
+            <a href="" class="btn-box" download="/Users/vijaykumaryadav/Documents/Vijay Resume 4.0">Download CV</a>
+        </div>
+      
+        
+    </section>
+    
+    <!-- Additional sections for Skills, Projects, Contact can go here -->
+
+</body> 
+</html>
