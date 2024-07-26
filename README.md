@@ -1,3 +1,2 @@
 # My-Portfolio
-# vy35250.github.io
-# vy35250.github.io
+Still in progress to host the website xD!
